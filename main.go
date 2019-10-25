@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
@@ -24,7 +25,7 @@ func main() {
 	userState = make(map[int64]string)
 	premiseByChat = make(map[int64]premise)
 
-	bot, err := tgbotapi.NewBotAPI("")
+	bot, err := tgbotapi.NewBotAPI(os.Getenv("BOTKEY"))
 	if err != nil {
 		log.Panic(err)
 	}
