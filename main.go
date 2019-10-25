@@ -24,7 +24,7 @@ func main() {
 	userState = make(map[int64]string)
 	premiseByChat = make(map[int64]premise)
 
-	bot, err := tgbotapi.NewBotAPI("1008491144:AAEcOWH4AqHpFx1RU-RHkqgfxNzT-h6sabQ")
+	bot, err := tgbotapi.NewBotAPI("")
 	if err != nil {
 		log.Panic(err)
 	}
