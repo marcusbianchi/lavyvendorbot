@@ -1,1 +1,3 @@
-# lavyvendorbot
+# LazyVendorBot for Telegram
+
+@LazyVendorBot
